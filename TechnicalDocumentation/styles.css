@@ -1,0 +1,124 @@
+:root {
+   --header-color: black;
+   --font-color: #4d4e53;
+}
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth
+}
+
+body {
+   font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+   display: flex;
+   flex-direction: row;
+   line-height: 1.5;
+   color: var(--font-color);
+}
+
+#navbar {
+   height: 100vh;
+   width: 25%;
+   border-right: solid;
+   border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar header {
+   text-align: center;
+   padding: 15px 10px;
+}
+
+#navbar li {
+   border-top: 1px solid;
+}
+
+#navbar a {
+   display: block;
+   text-decoration: none;
+   cursor: pointer;
+   padding: 10px 30px;
+   color: var(--font-color);
+}
+
+main {
+   height: 100vh;
+   width: 75%;
+   padding: 30px;
+   overflow: scroll;
+}
+
+header {
+   font-size: 1.8em;
+   color: var(--header-color);
+}
+
+article {
+   padding: 10px 15px;
+   font-size: .96em;
+}
+
+article ul {
+   padding-left: 40px;
+}
+
+article li {
+   margin: 15px 0px 0px 20px;
+}
+
+article p {
+   margin: 15px 0px;
+}
+
+/* same styling as example */
+code {
+   display: block;
+   text-align: left;
+   white-space: pre-line;
+   position: relative;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 2;
+   background-color: #f7f7f7;
+   padding: 15px;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+@media only screen and (max-width: 420px) {
+
+   html {
+      font-size: 8px;
+   }
+
+   #navbar {
+      width: 25%;
+   }
+
+   #navbar header {
+      font-size: 1.2em;
+      padding: 1rem;
+   }
+
+   #navbar a {
+      padding: 5px 10px;
+   }
+
+   #main-doc {
+      padding: 10px;
+   }
+
+   article ul {
+      padding-left: 10px;
+   }
+
+   article li {
+      margin: 10px 0px 0px 15px;
+   }
+}

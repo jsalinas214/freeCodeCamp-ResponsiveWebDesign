@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+html {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+h3 {
+   font-size: 1.25rem;
+   padding: 30px 0;
+}
+
+ul {
+   max-width: 600px;
+   margin: 0 auto;
+   text-align: left;
+   line-height: 1.5;
+}
+
+li {
+   padding: 15px 0;
+}
+
+blockquote {
+   max-width: 60%;
+   margin: 40px auto;
+   padding-left: 10px;
+   font-style: italic;
+   text-align: left;
+   background-color: #EDEDED;
+   border-left: 4px solid #0000cd;
+}
+
+a {
+   color: #0000cd;
+}
+
+#main {
+   text-align: center;
+   background-color: lightgray;
+   margin: 15px;
+   border-radius: 10px;
+}
+
+#title {
+   padding-top: 20px;
+}
+
+#img-div {
+   background-color: #fff;
+   padding: 10px 30px;
+   border-radius: 10px;
+}
+
+#image {
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+   display: block;
+}
+
+#more-info {
+   padding-bottom: 80px;
+}

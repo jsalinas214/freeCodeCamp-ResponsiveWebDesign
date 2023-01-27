@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <section class="form-body">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">A form survey on your favorite Operating System</p>
+      <form id="survey-form" action="">
+         <div class="form-input">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your Name" required>
+         </div>
+         <div class="form-input">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+         </div>
+         <div class="form-input">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" name="number" min="12" max="99" placeholder="Age">
+         </div>
+         <div class="form-input">
+            <p>Which operating system do you prefer?</p>
+            <select name="system" id="dropdown">
+               <option value="" disabled selected>Select an option</option>
+               <option value="mac">Mac</option>
+               <option value="windows">Windows</option>
+               <option value="linux">Linux</option>
+               <option value="other">Other</option>
+            </select>
+         </div>
+         <div class="form-input">
+            <p>Would you ever consider switching operating systems?</p>
+            <label for="option-1">
+               <input type="radio" name="user-switch" value="yes" id="option-1">Yes
+            </label>
+            <label for="option-2">
+               <input type="radio" name="user-switch" value="maybe" id="option-2">Maybe
+            </label>
+            <label for="option-3">
+               <input type="radio" name="user-switch" value="no" id="option-3">No
+            </label>
+         </div>
+         <div class="form-input">
+            <p>Select your device(s) that you own / use.</p>
+            <label>
+               <input type="checkbox" name="device" value="macbook" class="checkbox-input">
+               Macbook Air / Pro
+            </label>
+            <label>
+               <input type="checkbox" name="device" value="ipad" class="checkbox-input">
+               Apple iPad
+            </label>
+            <label>
+               <input type="checkbox" name="device" value="surface" class="checkbox-input">
+               Windows Surface
+            </label>
+            <label>
+               <input type="checkbox" name="device" value="dell" class="checkbox-input">
+               Dell
+            </label>
+            <label>
+               <input type="checkbox" name="device" value="lenovo" class="checkbox-input">
+               Lenovo
+            </label>
+            <label>
+               <input type="checkbox" name="device" value="system76" class="checkbox-input">
+               System76
+            </label>
+         </div>
+         <div class="form-input">
+            <p>Describe your favorite features about your preferred operrating systems.</p>
+            <textarea name="comment" id="comment-area" cols="30" rows="10" placeholder="Enter comments here"></textarea>
+         </div>
+         <div class="form-input">
+            <button id="submit" type="submit">Submit</button>
+         </div>
+      </form>
+   </section>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
